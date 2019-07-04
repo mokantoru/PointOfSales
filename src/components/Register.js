@@ -8,10 +8,10 @@ class Register extends Component {
         return (
             <div className="container">
                 <div className="mt-5 pt-5 row">
-                    <div className="col-10 col-md-4 mx-auto card cardRegister">
-                        <div className="card-body bodyRegister">
+                    <div className="col-5 col-md-6 mx-auto card cardRegister">
+                        <div className="card-body">
                             <div className="border-bottom card-title">
-                                <h1 className="text-center">
+                                <h1 className="text-center registerTitle">
                                     CREATE AN ACCOUNT
                                 </h1>
                             </div>
@@ -34,10 +34,10 @@ class Register extends Component {
                                 </form>
                             </div>
                             <div className="text-center">
-                                <button className="btn btn-dark px-5 buttonRegister">CREATE</button>
+                                <button className="btn btn-dark mt-3 px-5 buttonRegister">CREATE</button>
                             </div>
-                            <div className="mt-4 text-center">
-                                <p>HAVE AN ACCOUNT? <Link to="/login" className="registerText">LOGIN</Link></p>
+                            <div className="mt-4 text-center text-uppercase">
+                                <p>already have mokantoru account? <Link to="/login" className="registerText">LOGIN</Link></p>
                             </div>
                         </div>
                     </div>

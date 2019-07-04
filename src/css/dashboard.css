@@ -1,0 +1,8 @@
+.sidebar{
+    height: 800px !important;
+    background-color: purple !important;
+}
+
+.sidebar a{
+    color: white
+}

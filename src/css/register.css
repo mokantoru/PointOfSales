@@ -1,5 +1,14 @@
+.cardRegister{
+    border-radius: 0px !important;
+    border-color: black !important;
+    width: 2000rem !important;
+}
+
 .registerTitle{
-    text-align: center !important;
-    border: 1px solid black;
-    
+    font-size: 40px !important;
+}
+
+
+.buttonRegister{
+    border-radius: 0 !important
 }

@@ -11,11 +11,11 @@ class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <Route component={NavBar} />
+        {/* <Route component={NavBar} /> */}
         <Route path="/" exact component={Home} />
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />
-        <Route path="/dashboard/:page" component={Dashboard} />
+        <Route path="/:page/:page2" component={Dashboard} />
       </BrowserRouter>
     );
   }

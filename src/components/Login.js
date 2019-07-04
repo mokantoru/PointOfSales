@@ -18,7 +18,7 @@ class Login extends React.Component {
           </div>
           <button className="buttonlogin">sign in</button>
           <div>
-            <p className="plogin">Don’t have a Moka account? <Link className="linklogin" to="/register">Sign up</Link></p>
+            <p className="plogin">Don’t have a mokantoru account? <Link className="linklogin" to="/register">Sign up</Link></p>
           </div>
         </div>
       </div>

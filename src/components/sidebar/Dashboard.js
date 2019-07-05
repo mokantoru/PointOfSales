@@ -10,6 +10,7 @@ import Categories from "../content/Categories";
 import ItemLibrary from "../content/ItemLibrary";
 import Modifiers from "../content/Modifiers";
 import Promo from "../content/Promo";
+import Discount from "../content/Discount"
 
 class Dashboard extends React.Component {
   renderSidebar = () => {
@@ -33,6 +34,8 @@ class Dashboard extends React.Component {
         return <Modifiers />
       } else if (page2 === "promo") {
         return <Promo />
+      } else if (page2 === "discount") {
+        return <Discount />
       }
     }
   }

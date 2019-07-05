@@ -5,7 +5,7 @@ import Login from "./Login";
 import Home from "./Home";
 import Register from "./Register";
 import NavBar from "./Navbar";
-import Dashboard from "./Dashboard";
+import Dashboard from "./sidebar/Dashboard";
 
 class App extends React.Component {
   render() {

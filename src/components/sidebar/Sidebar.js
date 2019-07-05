@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import { Collapse, Button, CardBody, Card } from 'reactstrap';
-import Report from './MenuSidebar.js'
+import MenuSideBar from '../sidebar/MenuSidebar.js'
 import { async } from "q";
 
 
@@ -93,7 +93,7 @@ class SideBar extends React.Component {
             <li
             // onClick={() => { this.fnFlag("tablemanagement") }}
             >
-              <Report
+              <MenuSideBar
                 className="linkmenusidebar"
                 page="tablemanagement"
                 pathname="/tablemanagement/0"
@@ -104,7 +104,7 @@ class SideBar extends React.Component {
             <li
             // onClick={() => { this.fnFlag("library") }}
             >
-              <Report
+              <MenuSideBar
                 className="linkmenusidebar"
                 page="library"
                 pathname="/library/0"
@@ -115,7 +115,7 @@ class SideBar extends React.Component {
             <li
             // onClick={() => { this.fnFlag("ingredient") }}
             >
-              <Report
+              <MenuSideBar
                 className="linkmenusidebar"
                 page="ingredient"
                 pathname="/ingredient/0"
@@ -126,7 +126,7 @@ class SideBar extends React.Component {
             <li
             // onClick={() => { this.fnFlag("kontoru") }}
             >
-              <Report
+              <MenuSideBar
                 className="linkmenusidebar"
                 page="kontoru"
                 pathname="/kontoru/0"

@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
+import "../css/itemLibrary.css"
 
 class ItemLibrary extends Component {
     render() {
         return (
             <div>
-                <h1>Ini Item Library</h1>
+                <div className="title">
+                    <p>Item Library</p>
+                </div>
             </div>
         )
     }

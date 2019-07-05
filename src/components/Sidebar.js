@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import { Collapse, Button, CardBody, Card } from 'reactstrap';
-import Report from './MenuSidebar.js'
+import Report from './MenuSidebar'
 import { async } from "q";
 
 

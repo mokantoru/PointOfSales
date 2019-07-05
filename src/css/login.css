@@ -1,0 +1,46 @@
+.login{
+    margin: 100px 0;
+    padding: 0 400px
+}
+.divlogin{
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px 30px
+}
+.inputlogin{
+    width: 100%;
+    height: 35px;
+    border: 1px solid black;
+    margin: 10px 0px;
+    padding: 0 5px
+}
+.divlogin2{
+    text-align: left;
+    margin: 0
+}
+.linklogin{
+    align-content: flex-end;
+    color: black;
+    text-decoration: none
+}
+.linklogin:hover{
+    color: grey;
+    text-decoration: underline
+}
+.plogin, .linklogin{
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 600
+}
+.buttonlogin{
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: white;
+    margin: 10px 0
+}
+.buttonlogin:hover{
+    background-color: black;
+    color: white
+}

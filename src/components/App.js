@@ -6,6 +6,7 @@ import Home from "./Home";
 import Register from "./Register";
 import NavBar from "./Navbar";
 import Dashboard from "./Dashboard";
+import Categories from "./Categories";
 
 class App extends React.Component {
   render() {
@@ -16,6 +17,7 @@ class App extends React.Component {
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />
         <Route path="/:page/:page2" component={Dashboard} />
+        <Route path="/categories" component={Categories} />
       </BrowserRouter>
     );
   }

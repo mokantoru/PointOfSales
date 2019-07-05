@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-class ItemLibrary extends Component {
+class Promo extends Component {
     render() {
         return (
             <div>
-                <h1>Ini Item Library</h1>
+                <h1>Promo</h1>
             </div>
         )
     }
 }
 
-export default ItemLibrary
+export default Promo

@@ -1,8 +1,29 @@
-.sidebar{
-    height: 800px !important;
-    background-color: purple !important;
-}
-
-.sidebar a{
+.divcol-2{
+    min-height: 100vh;
+    background-color:rgb(83, 181, 159);
     color: white
+}
+.h1sidebar{
+    margin: 8px 0;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0
+}
+.linkmenusidebar{
+    color: white;
+    font-size: 14px;
+    font-weight: 800
+}
+.linkmenusidebar:hover{
+    color: rgb(226, 226, 226); 
+    text-decoration: none
+}
+.ulsidebar{
+    padding: 0
+}
+.ulmenusidebar{
+    padding-left: 20px
+}
+li{
+    list-style: none
 }

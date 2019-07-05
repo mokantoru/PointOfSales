@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import "../css/itemLibrary.css"
+import "../../css/itemLibrary.css"
 
 class ItemLibrary extends Component {
     render() {

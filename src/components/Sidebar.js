@@ -33,7 +33,11 @@ class SideBar extends React.Component {
       <ul className="ulmenusidebar">
         <li>Item Library</li>
         <li>Modifiers</li>
-        <li>Categories</li>
+        <li>
+          <Link to="/libray/categories">
+            Categories
+          </Link>
+        </li>
         <li>Promo</li>
         <li>Discounts</li>
         <li>Taxes</li>

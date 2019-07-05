@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-class ItemLibrary extends Component {
+class Modifiers extends Component {
     render() {
         return (
             <div>
-                <h1>Ini Item Library</h1>
+                <h1>Modifiers</h1>
             </div>
         )
     }
 }
 
-export default ItemLibrary
+export default Modifiers

@@ -49,7 +49,11 @@ class SideBar extends React.Component {
             Promo
           </Link>
         </li>
-        <li>Discounts</li>
+        <li>
+          <Link to="/library/discount">
+            Discounts
+          </Link>
+        </li>
         <li>Taxes</li>
         <li>Gratuity</li>
         <li>Sales types</li>

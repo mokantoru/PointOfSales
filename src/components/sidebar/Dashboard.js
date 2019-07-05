@@ -4,9 +4,12 @@ import SideBar from "./Sidebar";
 import TableManage from "../content/TableManage";
 import Sale from "../content/Sale";
 
-import '../../css/dashboard.css'
-import Capital from "../content/Capital";
+import "../../css/dashboard.css"
+import Capital from "../content/Capital.js";
 import Categories from "../content/Categories";
+import ItemLibrary from "../content/ItemLibrary";
+import Modifiers from "../content/Modifiers";
+import Promo from "../content/Promo";
 
 class Dashboard extends React.Component {
   renderSidebar = () => {
@@ -21,9 +24,15 @@ class Dashboard extends React.Component {
     if (page === "sales") {
       return <Sale />
     }
-    if (page === "libray") {
+    if (page === "library") {
       if (page2 === "categories") {
         return <Categories />
+      } else if (page2 === "itemlibrary") {
+        return <ItemLibrary />
+      } else if (page2 === "modifiers") {
+        return <Modifiers />
+      } else if (page2 === "promo") {
+        return <Promo />
       }
     }
   }

@@ -1,9 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import { Collapse, Button, CardBody, Card } from 'reactstrap';
-import MenuSideBar from '../sidebar/MenuSidebar.js'
-import { async } from "q";
-
+import MenuSideBar from './MenuSidebar.js'
 
 class SideBar extends React.Component {
   tableManagement = () => {
@@ -31,14 +29,26 @@ class SideBar extends React.Component {
   library = () => {
     return (
       <ul className="ulmenusidebar">
-        <li>Item Library</li>
-        <li>Modifiers</li>
         <li>
-          <Link to="/libray/categories">
+          <Link to="/library/itemlibrary">
+            Item Library
+          </Link>
+        </li>
+        <li>
+          <Link to="/library/modifiers">
+            Modifiers
+          </Link>
+        </li>
+        <li>
+          <Link to="/library/categories">
             Categories
           </Link>
         </li>
-        <li>Promo</li>
+        <li>
+          <Link to="/library/promo">
+            Promo
+          </Link>
+        </li>
         <li>Discounts</li>
         <li>Taxes</li>
         <li>Gratuity</li>

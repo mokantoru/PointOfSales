@@ -4,7 +4,7 @@ class TeamManage extends React.Component {
 	render() {
 		return (
 			<div>
-				<h1>ini TeamManage</h1>
+				<h1>ini TableManage</h1>
 			</div>
 		)
 	}

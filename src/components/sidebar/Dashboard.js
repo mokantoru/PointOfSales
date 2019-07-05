@@ -1,15 +1,15 @@
 import React from "react"
 
 import SideBar from "./Sidebar";
-import TableManage from "./TableManage";
-import Sale from "./Sale";
+import TableManage from "../content/TableManage";
+import Sale from "../content/Sale";
 
-import '../css/dashboard.css'
-import Capital from "./Capital";
-import Categories from "./Categories";
-import ItemLibrary from "./ItemLibrary";
-import Modifiers from "./Modifiers";
-import Promo from "./Promo";
+import "../../css/dashboard.css"
+import Capital from "../content/Capital.js";
+import Categories from "../content/Categories";
+import ItemLibrary from "../content/ItemLibrary";
+import Modifiers from "../content/Modifiers";
+import Promo from "../content/Promo";
 
 class Dashboard extends React.Component {
   renderSidebar = () => {

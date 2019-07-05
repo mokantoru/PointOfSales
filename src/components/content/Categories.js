@@ -1,6 +1,6 @@
 import React from 'react'
 import {Modal, ModalHeader, ModalBody, ModalFooter, Button} from 'reactstrap'
-import "../css/categories.css"
+import "../../css/categories.css"
 
 class Categories extends React.Component {
     state = {
@@ -41,8 +41,8 @@ class Categories extends React.Component {
                             <option>Outlet 2</option>
                         </select>
                     </div>
-                    <div className='col-3'>
-                        <input type='text' placeholder='search'/>
+                    <div className='col-3 px-0'>
+                        <input className='search' type='text' placeholder=' search'></input>
                     </div>
                     <div className='col-6'></div>
                 </div>
@@ -59,6 +59,13 @@ class Categories extends React.Component {
                             <tbody>
                                 <tr>
                                     <td>Food</td>
+                                    <td className='text-center'>1</td>
+                                    <td className='text-right'>
+                                        <button className='btn btn-outline-secondary'>Assign To Item</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Drink</td>
                                     <td className='text-center'>1</td>
                                     <td className='text-right'>
                                         <button className='btn btn-outline-secondary'>Assign To Item</button>

@@ -2,3 +2,10 @@
     background-color:rgb(83, 181, 159) !important;
     color: white !important;
 }
+
+.search {
+    border-radius: 10px !important;
+    border: 1px solid rgb(167, 167, 167) !important;
+    height: 40px;
+    width: 100%;
+}

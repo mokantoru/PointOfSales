@@ -21,5 +21,7 @@
     background: url(../icons/search.png) no-repeat scroll 7px 7px;
     background-size: 15px;
     background-position: 180px;
-   
+}
+.search:focus{
+    outline: none !important;
 }

@@ -4,3 +4,22 @@
     font-size: 30px;
     font-weight: 500;
 }
+.btn-mokantoru{
+    background-color:rgb(83, 181, 159) !important;
+    color: white !important;
+    border: none !important;
+}
+.btn-category{
+    background-color: transparent !important;
+    color: rgb(155, 151, 151) !important;
+    border: 1px solid rgb(167, 167, 167) !important;
+    border-radius: 20px !important;
+}
+.search{
+    padding: 10px !important;
+    border-radius: 20px !important;
+    background: url(../icons/search.png) no-repeat scroll 7px 7px;
+    background-size: 15px;
+    background-position: 180px;
+   
+}

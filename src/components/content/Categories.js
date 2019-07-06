@@ -15,7 +15,7 @@ class Categories extends React.Component {
     
     render() {
         return (
-            <div className='ml-3'>
+            <div className='container-fluid'>
                 <div className='row mt-3'>
                     <div className='col-6 text-left'>
                         <h3>Categories</h3>

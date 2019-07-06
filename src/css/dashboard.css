@@ -19,7 +19,8 @@
     transform: translate(-8px, 0px);
 }
 .divcol-10{
-    padding: 0px !important
+    padding: 0px !important;
+    width: 100% !important
 }
 .h1sidebar{
     margin: 8px 0;

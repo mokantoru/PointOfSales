@@ -95,7 +95,7 @@ class SideBar extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="container-fluid">
         <h1 className="h1sidebar">mo<strong>kantoru</strong></h1>
         <div>
           <ul className="ulsidebar">

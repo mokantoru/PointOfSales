@@ -1,7 +1,25 @@
 .divcol-2{
+    width: 100px;
     min-height: 100vh;
     background-color:rgb(83, 181, 159);
-    color: white
+    color: white;
+    transition: 0.5s
+}
+.burger{
+    padding:0 8px;
+}
+.divburger1, .divburger2, .divburger3{
+    width: 35px;
+    height: 4px;
+    background-color: rgb(83, 181, 159);
+    margin: 6px 0;
+    transition: 0.1s
+}
+.change .divburger2{
+    transform: translate(-8px, 0px);
+}
+.divcol-10{
+    padding: 0px !important
 }
 .h1sidebar{
     margin: 8px 0;

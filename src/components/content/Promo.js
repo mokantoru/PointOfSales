@@ -23,7 +23,6 @@ class Promo extends Component {
                         </DropdownToggle>
                         <DropdownMenu>
                             <DropdownItem>Buy X Get Y</DropdownItem>
-                            <DropdownItem divider/>
                             <DropdownItem>Set Menu</DropdownItem>
                         </DropdownMenu>
                     </UncontrolledButtonDropdown>
@@ -33,9 +32,7 @@ class Promo extends Component {
                         </DropdownToggle>
                         <DropdownMenu>
                             <DropdownItem>Scheduled</DropdownItem>
-                            <DropdownItem divider/>
                             <DropdownItem>On Going</DropdownItem>
-                            <DropdownItem divider/>
                             <DropdownItem>Inactive</DropdownItem>
                         </DropdownMenu>
                     </UncontrolledButtonDropdown>

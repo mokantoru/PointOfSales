@@ -1,28 +1,19 @@
-import React from 'react'
-import {Modal, ModalHeader, ModalBody, ModalFooter, Button} from 'reactstrap'
-import "../../css/categories.css"
+import React, { Component } from 'react';
 
-class Categories extends React.Component {
-    state = {
-        modal: false
-    }
-    
-    toggle = () => {
-        this.setState(prevState => ({
-            modal: !prevState.modal
-        }));
-    }
-    
+import "../../css/salesType.css"
+
+class SalesType extends Component {
     render() {
         return (
-            <div className='container-fluid'>
+            <div>
+               <div className='container-fluid'>
                 <div className='row mt-3'>
                     <div className='col-6 text-left'>
-                        <h3>Categories</h3>
+                        <h3>Sales Type</h3>
                     </div>
                     <div className='col-6 text-right'>
-                        <button className='btn btn-mokantoru' onClick={this.toggle}>Create Category</button>
-                        <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className} size='sm'>
+                        <button className='btn btn-mokantoru' onClick={this.toggle}>Create Sales Type</button>
+                        {/* <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className} size='sm'>
                             <ModalBody className='text-center'>
                                 <h3 className='mt-2'>Add New Category</h3>
                                 <input type='text' className='form-control mt-4' placeholder='Category Name' style={{width: '100%'}}/>
@@ -31,7 +22,7 @@ class Categories extends React.Component {
                                 <Button color="secondary" onClick={this.toggle}>Cancel</Button>{' '}
                                 <Button color="primary" onClick={this.toggle}>Save</Button>
                             </ModalFooter>
-                        </Modal>
+                        </Modal> */}
                     </div>
                 </div>
                 <div className='row mt-3'>
@@ -42,7 +33,7 @@ class Categories extends React.Component {
                         </select>
                     </div>
                     <div>
-                        <input className='search' type='text' placeholder=' search'></input>
+                        <input className='searchSalesType' type='text' placeholder='search'></input>
                     </div>
                     <div className='col-6'></div>
                 </div>
@@ -51,33 +42,30 @@ class Categories extends React.Component {
                         <table class="table table-hover">
                             <thead>
                                 <tr>
-                                    <th scope="col">Category Name</th>
-                                    <th className='text-center' scope="col">Item Stocks</th>
-                                    <th scope="col"></th>
+                                    <th scope="col">Name</th>
+                                    <th className='text-center' scope="col">Gratuity Applied</th>
+                                    <th className='text-right' scope="col">Status</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Food</td>
-                                    <td className='text-center'>1</td>
-                                    <td className='text-right'>
-                                        <button className='btn btn-outline-secondary'>Assign To Item</button>
-                                    </td>
+                                    <td>Dine in</td>
+                                    <td className='text-center'>1 gratuity</td>
+                                    <td className='text-right'>Active</td>
                                 </tr>
                                 <tr>
-                                    <td>Drink</td>
-                                    <td className='text-center'>1</td>
-                                    <td className='text-right'>
-                                        <button className='btn btn-outline-secondary'>Assign To Item</button>
-                                    </td>
+                                    <td>Take away</td>
+                                    <td className='text-center'>0 gratuity</td>
+                                    <td className='text-right'>Active</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
+            </div>
         )
     }
 }
 
-export default Categories
+export default SalesType

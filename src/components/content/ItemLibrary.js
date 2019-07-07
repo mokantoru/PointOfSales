@@ -13,16 +13,16 @@ class ItemLibrary extends Component {
                         <h3>Item Library</h3>
                     </div>
                     <div className='col-6 text-right'>
-                    <UncontrolledButtonDropdown className="mr-2">
-                        <DropdownToggle caret className="btn-mokantoru">
-                            Import / Export
-                        </DropdownToggle>
-                        <DropdownMenu>
-                            <DropdownItem>Import items</DropdownItem>
-                            <DropdownItem divider/>
-                            <DropdownItem>Export items</DropdownItem>
-                        </DropdownMenu>
-                    </UncontrolledButtonDropdown>
+                        <UncontrolledButtonDropdown className="mr-2">
+                            <DropdownToggle caret className="btn-mokantoru">
+                                Import / Export
+                            </DropdownToggle>
+                            <DropdownMenu>
+                                <DropdownItem>Import items</DropdownItem>
+                                <DropdownItem divider/>
+                                <DropdownItem>Export items</DropdownItem>
+                            </DropdownMenu>
+                        </UncontrolledButtonDropdown>
                         <button className='btn btn-mokantoru'>Create Item</button>
                     </div>
                 </div>

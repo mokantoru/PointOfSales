@@ -11,8 +11,12 @@ import ItemLibrary from "../content/ItemLibrary";
 import Modifiers from "../content/Modifiers";
 import Promo from "../content/Promo";
 import Discount from "../content/Discount"
+import Navbar from "../Navbar"
 
 class Dashboard extends React.Component {
+  state = {
+    flag: true
+  }
   renderSidebar = () => {
     const { page, page2 } = this.props.match.params
     if (page === "tablemanagement") {
@@ -39,13 +43,25 @@ class Dashboard extends React.Component {
       }
     }
   }
+  onClickBurger = () => {
+    document.getElementsByClassName("burger")[0].classList.toggle("change")
+    if (this.state.flag) {
+      document.getElementsByClassName('divcol-2')[0].style.width = "250px"
+      this.setState((prevState => ({ flag: !prevState.flag })))
+    } else {
+      document.getElementsByClassName('divcol-2')[0].style.width = "100px"
+      this.setState((prevState => ({ flag: !prevState.flag })))
+    }
+
+  }
   render() {
     return (
       <div className="d-flex">
-        <div className="divcol-2 col-2">
+        <div className="divcol-2">
           <SideBar page={this.props.match.params.page} />
         </div>
-        <div className="col-8">
+        <div className="divcol-10">
+          <Navbar onClickBurger={this.onClickBurger} />
           {this.renderSidebar()}
         </div>
       </div>

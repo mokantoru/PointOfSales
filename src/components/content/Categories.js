@@ -15,7 +15,7 @@ class Categories extends React.Component {
     
     render() {
         return (
-            <div className='ml-3'>
+            <div className='container-fluid'>
                 <div className='row mt-3'>
                     <div className='col-6 text-left'>
                         <h3>Categories</h3>
@@ -23,8 +23,9 @@ class Categories extends React.Component {
                     <div className='col-6 text-right'>
                         <button className='btn btn-mokantoru' onClick={this.toggle}>Create Category</button>
                         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className} size='sm'>
-                            <ModalBody>
-                                <input type='text' className='form-control' placeholder='Category Name' style={{width: '100%'}}/>
+                            <ModalBody className='text-center'>
+                                <h3 className='mt-2'>Add New Category</h3>
+                                <input type='text' className='form-control mt-4' placeholder='Category Name' style={{width: '100%'}}/>
                             </ModalBody>
                             <ModalFooter>
                                 <Button color="secondary" onClick={this.toggle}>Cancel</Button>{' '}

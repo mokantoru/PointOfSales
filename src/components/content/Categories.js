@@ -41,7 +41,7 @@ class Categories extends React.Component {
                             <option>Outlet 2</option>
                         </select>
                     </div>
-                    <div className='col-3 px-0'>
+                    <div>
                         <input className='search' type='text' placeholder=' search'></input>
                     </div>
                     <div className='col-6'></div>

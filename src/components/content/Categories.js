@@ -7,7 +7,7 @@ class Categories extends React.Component {
         modal: false
     }
     
-    toggle() {
+    toggle = () => {
         this.setState(prevState => ({
             modal: !prevState.modal
         }));
@@ -21,17 +21,17 @@ class Categories extends React.Component {
                         <h3>Categories</h3>
                     </div>
                     <div className='col-6 text-right'>
-                        <button className='btn btn-mokantoru'>Create Category</button>
-                        {/* <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-                            <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
-                            <ModalBody>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <button className='btn btn-mokantoru' onClick={this.toggle}>Create Category</button>
+                        <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className} size='sm'>
+                            <ModalBody className='text-center'>
+                                <h3 className='mt-2'>Add New Category</h3>
+                                <input type='text' className='form-control mt-4' placeholder='Category Name' style={{width: '100%'}}/>
                             </ModalBody>
                             <ModalFooter>
-                                <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
-                                <Button color="secondary" onClick={this.toggle}>Cancel</Button>
+                                <Button color="secondary" onClick={this.toggle}>Cancel</Button>{' '}
+                                <Button color="primary" onClick={this.toggle}>Save</Button>
                             </ModalFooter>
-                        </Modal> */}
+                        </Modal>
                     </div>
                 </div>
                 <div className='row mt-3'>

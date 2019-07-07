@@ -14,6 +14,7 @@ import Discount from "../content/Discount"
 import Taxes from "../content/Taxes"
 import Gratuity from "../content/Gratuity"
 import Navbar from "../Navbar"
+import SalesType from "../content/SalesType";
 
 class Dashboard extends React.Component {
   state = {
@@ -46,6 +47,8 @@ class Dashboard extends React.Component {
         return <Taxes />
       } else if (page2 === "gratuity") {
         return <Gratuity />
+      } else if (page2 === "salestype") {
+        return <SalesType />
       }
     }
   }

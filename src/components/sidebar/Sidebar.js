@@ -64,7 +64,11 @@ class SideBar extends React.Component {
             Gratuity
           </Link>
         </li>
-        <li>Sales types</li>
+        <li>
+          <Link to="/library/salestype">
+            Sales types
+          </Link>
+        </li>
       </ul>
     )
   }

@@ -12,6 +12,7 @@ import Modifiers from "../content/Modifiers";
 import Promo from "../content/Promo";
 import Discount from "../content/Discount"
 import Taxes from "../content/Taxes"
+import Gratuity from "../content/Gratuity"
 import Navbar from "../Navbar"
 
 class Dashboard extends React.Component {
@@ -43,6 +44,8 @@ class Dashboard extends React.Component {
         return <Discount />
       } else if (page2 === "taxes") {
         return <Taxes />
+      } else if (page2 === "gratuity") {
+        return <Gratuity />
       }
     }
   }

@@ -1,7 +1,9 @@
-import React from "react"
-import { Link } from "react-router-dom"
-import { Collapse, Button, CardBody, Card } from 'reactstrap';
-import MenuSideBar from './MenuSidebar.js'
+import React from "react";
+import { Link } from "react-router-dom";
+// import { Collapse, Button, CardBody, Card } from 'reactstrap';
+import MenuSideBar from './MenuSidebar.js';
+
+import dashboardLogo from '../../icons/mokantoru_resources/icons when opened/home icon.png'
 
 class SideBar extends React.Component {
   tableManagement = () => {
@@ -108,12 +110,11 @@ class SideBar extends React.Component {
   render() {
     return (
       <div className="container-fluid">
-        <h1 className="h1sidebar">mo<strong>kantoru</strong></h1>
         <div>
           <ul className="ulsidebar">
             <li>
               <Link className="linkmenusidebar" to="/dashboard/0">
-                dashboard
+                <img src={dashboardLogo} alt="dashboard"/>
             </Link>
             </li>
             <li

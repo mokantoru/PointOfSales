@@ -58,19 +58,19 @@ class Dashboard extends React.Component {
       document.getElementsByClassName('divcol-2')[0].style.width = "250px"
       this.setState((prevState => ({ flag: !prevState.flag })))
     } else {
-      document.getElementsByClassName('divcol-2')[0].style.width = "100px"
+      document.getElementsByClassName('divcol-2')[0].style.width = "120px"
       this.setState((prevState => ({ flag: !prevState.flag })))
     }
 
   }
   render() {
     return (
-      <div className="d-flex">
+      <div>
+        <Navbar onClickBurger={this.onClickBurger} />
         <div className="divcol-2">
           <SideBar page={this.props.match.params.page} />
         </div>
         <div className="divcol-10">
-          <Navbar onClickBurger={this.onClickBurger} />
           {this.renderSidebar()}
         </div>
       </div>

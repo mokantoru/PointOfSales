@@ -9,18 +9,21 @@ import {
   NavLink
 } from "reactstrap";
 
+import '../css/navbar.css'
+import logo from "../icons/mokantoru_resources/KONTORU.png"
+
 class NavBar extends React.Component {
   render() {
     return (
-      <Navbar color="light" light expand="md">
+      <Navbar className="navbar" expand="md">
+        <NavbarBrand href="/">
+          <img className="logo" src={logo} alt="logo"/>
+        </NavbarBrand>
         <div onClick={this.props.onClickBurger} className="burger">
           <div className="divburger1"></div>
           <div className="divburger2"></div>
           <div className="divburger3"></div>
         </div>
-        <NavbarBrand href="/">
-          mokantoru
-        </NavbarBrand>
         <NavbarToggler onClick={this.toggle} />
         {/* <Collapse isOpen={this.state.isOpen} navbar> */}
         <Nav className="ml-auto" navbar>
